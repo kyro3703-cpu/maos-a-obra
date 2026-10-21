@@ -161,6 +161,7 @@
   function renderElectricalCatalog() {
     const section = q('.lateral');
     section.classList.add('electrical-catalog');
+    section.classList.add('electrical-service-catalog');
     section.innerHTML = '<div class="wrap"><div class="electrical-intro"><small>SOLUÇÕES ELÉTRICAS</small><h2>Encontre o serviço elétrico que você precisa.</h2><p>Escolha uma opção e fale diretamente com a Mãos à Obra. Antes da execução, avaliamos as condições da instalação e apresentamos o orçamento.</p></div><div id="electrical-groups"></div></div>';
     const container = q('#electrical-groups');
     electricalGroups.forEach((group, groupIndex) => {
