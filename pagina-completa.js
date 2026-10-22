@@ -6,7 +6,7 @@
     pintura: ['Pintura residencial', 'PINTURA E ACABAMENTO', ['Pintura interna', 'Pintura externa', 'Tetos', 'Fachadas', 'Massa corrida', 'Texturas', 'Portas e janelas', 'Retoques']],
     revestimentos: ['Pisos e revestimentos', 'REVESTIMENTOS', ['Piso cerâmico', 'Porcelanato', 'Azulejos', 'Piso sobre piso', 'Rodapés', 'Rejuntamento', 'Troca de peças', 'Preparação da base']],
     montagens: ['Montagens e reparos', 'SERVIÇOS RESIDENCIAIS', ['Móveis', 'Suportes', 'Prateleiras', 'Varais', 'Cortinas', 'Fechaduras', 'Portas', 'Pequenos reparos']],
-    reforma: ['Reformas residenciais', 'REFORMAS E MELHORIAS', ['Cozinha', 'Banheiro', 'Quarto', 'Sala', 'Área externa', 'Alvenaria', 'Drywall e gesso', 'Acabamentos']],
+    reforma: ['Reformas residenciais', 'REFORMAS E MELHORIAS', ['Cozinha', 'Banheiro', 'Quarto', 'Sala', 'Área externa', 'Alvenaria e Drywall']],
     'jardinagem-piscina': ['Jardinagem e piscina', 'CUIDADO COM ÁREAS EXTERNAS', ['Corte de grama', 'Poda e acabamento', 'Limpeza de jardins', 'Plantio e manutenção', 'Limpeza de piscina', 'Aspiração e escovação', 'Tratamento da água', 'Manutenção preventiva']],
     'limpeza-pos-obra': ['Limpeza pós-obra', 'LIMPEZA PARA ENTREGA', ['Remoção de poeira fina', 'Limpeza de pisos', 'Limpeza de revestimentos', 'Limpeza de vidros', 'Limpeza de portas e esquadrias', 'Remoção de respingos', 'Organização dos ambientes', 'Limpeza final para entrega']]
   };
