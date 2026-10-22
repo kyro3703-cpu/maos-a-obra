@@ -112,7 +112,11 @@
     'limpeza-pos-obra': 'assets/servicos/limpeza-pos-obra.png'
   };
   const pathKey = location.pathname.split('/').filter(Boolean).pop()?.replace(/\.html$/, '');
-  const key = new URLSearchParams(location.search).get('tipo') || (pathKey && sets[pathKey] ? pathKey : 'eletrica');
+  const queryKey = new URLSearchParams(location.search).get('tipo');
+  const key = queryKey && sets[queryKey] ? queryKey : (pathKey && sets[pathKey] ? pathKey : 'eletrica');
+  if (queryKey && sets[queryKey] && /servico-diferenciais(?:\.html)?$/.test(location.pathname)) {
+    history.replaceState(null, '', '/' + queryKey);
+  }
   const service = sets[key] || sets.eletrica;
   const whatsapp = (name) => 'https://wa.me/5522988020606?text=' + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para ' + name + '.');
 
