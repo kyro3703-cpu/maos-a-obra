@@ -8,9 +8,12 @@ if not exist "%GIT_EXE%" set "GIT_EXE=git"
 echo Configurando o repositorio...
 "%GIT_EXE%" config --global --add safe.directory "%CD%" >nul 2>&1
 
-echo Adicionando todos os arquivos alterados...
-"%GIT_EXE%" add .
+echo Adicionando todos os arquivos novos, alterados e removidos...
+"%GIT_EXE%" add -A
 if errorlevel 1 goto error
+
+echo.
+"%GIT_EXE%" status --short
 
 "%GIT_EXE%" diff --cached --quiet
 if not errorlevel 1 (
