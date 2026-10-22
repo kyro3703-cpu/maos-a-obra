@@ -12,15 +12,15 @@
   };
   const photos = ['1621905252507-b35492cc74b4', '1581578731548-c64695cc6952', '1562259949-e8e7689d7828', '1581783898377-1c85bf937427', '1504148455328-c376907d081c', '1503387762-592deb58ef4e', '1544724569-5f546fd6f2b5', '1513506003901-1e6a229e2d15'];
   const electricalGroups = [
-    { title: 'Iluminação e ambientes', image: 'assets/eletrica/eletrica-iluminacao.png', items: [
+    { title: 'Iluminação e ambientes', image: 'assets/eletrica/.jpg', items: [
       ['Instalação de luminárias', 'Instalamos pendentes, lustres, plafons e arandelas com fixação segura, acabamento cuidadoso e teste completo de funcionamento.'],
-      ['Troca de lâmpadas e plafons', 'Substituição de peças antigas ou danificadas para recuperar a iluminação e renovar o ambiente.', 'assets/eletrica/troca-lampadas-plafons.png'],
-      ['Spots e trilhos', 'Distribuição e instalação de spots e trilhos para criar pontos de luz funcionais e decorativos.', 'assets/eletrica/spots-trilhos.png'],
-      ['Fitas e perfis de LED', 'Aplicação de iluminação em LED para sancas, móveis, bancadas e detalhes de acabamento.', 'assets/eletrica/fita-led.png'],
-      ['Iluminação externa', 'Soluções para fachadas, jardins, corredores e áreas de lazer com materiais adequados ao local.', 'assets/eletrica/iluminacao-externa.png'],
-      ['Sensor de presença', 'Instalação e regulagem de sensores para mais praticidade, segurança e economia de energia.', 'assets/eletrica/sensor-presenca.png']
+      ['Troca de lâmpadas e plafons', 'Substituição de peças antigas ou danificadas para recuperar a iluminação e renovar o ambiente.', 'assets/eletrica/.jpg'],
+      ['Spots e trilhos', 'Distribuição e instalação de spots e trilhos para criar pontos de luz funcionais e decorativos.', 'assets/eletrica/.jpg'],
+      ['Fitas e perfis de LED', 'Aplicação de iluminação em LED para sancas, móveis, bancadas e detalhes de acabamento.', 'assets/eletrica/.jpg'],
+      ['Iluminação externa', 'Soluções para fachadas, jardins, corredores e áreas de lazer com materiais adequados ao local.', 'assets/eletrica/.jpg'],
+      ['Sensor de presença', 'Instalação e regulagem de sensores para mais praticidade, segurança e economia de energia.', 'assets/eletrica/.jpg']
     ]},
-    { title: 'Tomadas e comandos', image: 'assets/eletrica/eletrica-tomadas.png', items: [
+    { title: 'Tomadas e comandos', image: 'assets/eletrica/.jpg', items: [
       ['Instalação de tomadas', 'Criação de novos pontos conforme a necessidade do ambiente e a capacidade do circuito existente.'],
       ['Troca de tomadas danificadas', 'Substituição de tomadas frouxas, aquecidas ou quebradas, com revisão das conexões.'],
       ['Adequação 127 V ou 220 V', 'Avaliação técnica da rede e adequação do ponto quando houver disponibilidade e segurança para a mudança.'],
@@ -28,7 +28,7 @@
       ['Interruptores paralelos', 'Comando da mesma iluminação em dois ou mais locais para trazer conforto ao dia a dia.'],
       ['Tomadas USB e inteligentes', 'Modernização de pontos com recursos USB ou automação compatível com a instalação do imóvel.']
     ]},
-    { title: 'Chuveiros e circuitos de potência', image: 'assets/eletrica/eletrica-chuveiros.png', items: [
+    { title: 'Chuveiros e circuitos de potência', image: 'assets/eletrica/.jpg', items: [
       ['Instalação de chuveiro elétrico', 'Instalação com verificação da tensão, potência, cabos, disjuntor e aterramento disponíveis.'],
       ['Troca de resistência', 'Diagnóstico e substituição da resistência correta para o modelo e a tensão do chuveiro.'],
       ['Conector para chuveiro', 'Troca de emendas inadequadas por conexão compatível, firme e protegida contra aquecimento.'],
@@ -36,7 +36,7 @@
       ['Ponto para ar-condicionado', 'Preparação elétrica dedicada de acordo com a potência e as exigências do equipamento.'],
       ['Circuito para forno ou cooktop', 'Criação de alimentação própria para equipamentos de maior potência, com proteção adequada.']
     ]},
-    { title: 'Quadro e proteção', image: 'assets/eletrica/eletrica-quadro.png', items: [
+    { title: 'Quadro e proteção', image: 'assets/eletrica/.jpg', items: [
       ['Troca de disjuntor', 'Identificação da causa do desarme e substituição por componente compatível com o circuito.'],
       ['Organização do quadro', 'Revisão de conexões, identificação dos circuitos e organização interna do quadro elétrico.'],
       ['Instalação de DR', 'Proteção adicional contra choques elétricos, aplicada conforme as condições da instalação.'],
@@ -44,7 +44,7 @@
       ['Balanceamento de circuitos', 'Análise da distribuição das cargas para reduzir sobrecargas e melhorar o funcionamento da rede.'],
       ['Diagnóstico de quedas e curtos', 'Investigação de desarmes, falta de energia, aquecimento e curtos para localizar a origem da falha.']
     ]},
-    { title: 'Infraestrutura e projetos', image: 'assets/eletrica/eletrica-infraestrutura.png', items: [
+    { title: 'Infraestrutura e projetos', image: 'assets/eletrica/.jpg', items: [
       ['Passagem de nova fiação', 'Instalação de cabos dimensionados para novos pontos, ampliações ou circuitos independentes.'],
       ['Substituição de fiação antiga', 'Renovação de trechos deteriorados após inspeção da infraestrutura e das cargas do imóvel.'],
       ['Canaletas e eletrodutos', 'Infraestrutura aparente ou embutida organizada para proteger cabos e manter um bom acabamento.'],
@@ -54,7 +54,7 @@
     ]}
   ];
   const hydraulicGroups = [
-    { title: 'Vazamentos e diagnóstico', image: 'assets/servicos/hidraulica.png', items: [
+    { title: 'Vazamentos e diagnóstico', image: 'assets/servicos/.jpg', items: [
       ['Localização de vazamentos', 'Investigação da origem do vazamento e orientação da solução mais adequada para o imóvel.'],
       ['Reparo de vazamentos', 'Correção de vazamentos em pontos aparentes, conexões, registros e tubulações acessíveis.'],
       ['Infiltrações hidráulicas', 'Avaliação de sinais de umidade relacionados a tubulações, conexões e pontos de água.'],
@@ -62,7 +62,7 @@
       ['Manutenção preventiva', 'Revisão de pontos hidráulicos para reduzir problemas e prolongar a vida útil da instalação.'],
       ['Avaliação hidráulica', 'Análise técnica do local antes da execução e apresentação de orçamento claro.']
     ]},
-    { title: 'Torneiras e registros', image: 'assets/servicos/hidraulica.png', items: [
+    { title: 'Torneiras e registros', image: 'assets/servicos/.jpg', items: [
       ['Instalação de torneiras', 'Instalação e substituição de torneiras de cozinha, banheiro, área de serviço e áreas externas.'],
       ['Troca de registros', 'Substituição de registros com desgaste, vazamento ou dificuldade de fechamento.'],
       ['Misturadores', 'Instalação e manutenção de misturadores conforme o modelo e as condições do ponto existente.'],
@@ -70,7 +70,7 @@
       ['Filtros de água', 'Instalação de filtros e purificadores com adequação do ponto hidráulico.'],
       ['Sifões e válvulas', 'Substituição e ajuste de sifões, válvulas e conexões de pias e lavatórios.']
     ]},
-    { title: 'Descargas e caixas', image: 'assets/servicos/hidraulica.png', items: [
+    { title: 'Descargas e caixas', image: 'assets/servicos/.jpg', items: [
       ['Reparo de descarga', 'Correção de falhas em descargas de parede, caixas acopladas e mecanismos internos.'],
       ['Caixa acoplada', 'Regulagem, troca de mecanismo, boia, vedação e botão da caixa acoplada.'],
       ['Válvula de descarga', 'Avaliação e manutenção de válvulas com vazamento, baixo fluxo ou acionamento irregular.'],
@@ -78,7 +78,7 @@
       ['Caixa de gordura', 'Limpeza, manutenção e adequação de conexões da caixa de gordura.'],
       ['Ralos e grelhas', 'Instalação e substituição de ralos, grelhas e componentes de escoamento.']
     ]},
-    { title: 'Tubulações, pias e ralos', image: 'assets/servicos/hidraulica.png', items: [
+    { title: 'Tubulações, pias e ralos', image: 'assets/servicos/.jpg', items: [
       ['Desentupimento simples', 'Desobstrução de pias, ralos e pontos acessíveis com avaliação da causa do problema.'],
       ['Instalação de pias e cubas', 'Instalação de pias e cubas com conexão, vedação e teste de escoamento.'],
       ['Troca de tubulações', 'Substituição de trechos de tubulação comprometidos após avaliação no local.'],
@@ -86,7 +86,7 @@
       ['Pontos de água', 'Criação ou deslocamento de pontos de água para cozinhas, banheiros e áreas de serviço.'],
       ['Pontos de esgoto', 'Adequação de pontos de esgoto respeitando o caimento e as condições da instalação.']
     ]},
-    { title: 'Caixas d’água e manutenção', image: 'assets/servicos/hidraulica.png', items: [
+    { title: 'Caixas d’água e manutenção', image: 'assets/servicos/.jpg', items: [
       ['Instalação de caixa d’água', 'Instalação e adequação de caixa d’água conforme o espaço e a estrutura disponíveis.'],
       ['Limpeza de caixa d’água', 'Limpeza e higienização para ajudar a manter a qualidade da água armazenada.'],
       ['Boia de caixa d’água', 'Troca e regulagem da boia para controlar corretamente o abastecimento.'],
@@ -104,12 +104,12 @@
     'limpeza-pos-obra': ['Limpeza pesada', 'Finalização e entrega']
   };
   const catalogImages = {
-    pintura: 'assets/servicos/pintura.png',
-    revestimentos: 'assets/servicos/revestimentos.png',
-    montagens: 'assets/servicos/montagens-reparos.png',
-    reforma: 'assets/servicos/reforma-completa.png',
-    'jardinagem-piscina': 'assets/servicos/jardinagem-piscina.png',
-    'limpeza-pos-obra': 'assets/servicos/limpeza-pos-obra.png'
+    pintura: 'assets/servicos/.jpg',
+    revestimentos: 'assets/servicos/.jpg',
+    montagens: 'assets/servicos/.jpg',
+    reforma: 'assets/servicos/.jpg',
+    'jardinagem-piscina': 'assets/servicos/.jpg',
+    'limpeza-pos-obra': 'assets/servicos/.jpg'
   };
   const pathKey = location.pathname.split('/').filter(Boolean).pop()?.replace(/\.html$/, '');
   const queryKey = new URLSearchParams(location.search).get('tipo');
@@ -136,7 +136,7 @@
   q('#tag').textContent = service[1];
   q('#lead').textContent = 'Atendimento profissional para cuidar do seu imóvel com segurança e organização.';
   q('#f-service').value = service[0];
-  q('.hero').style.backgroundImage = "url('assets/hero-equipe-maos-a-obra.png')";
+  q('.hero').style.backgroundImage = "url('assets/.jpg')";
   document.querySelectorAll('.wa').forEach((link) => { link.href = whatsapp(service[0]); });
 
   function makeCarousel(track, dots, prev, next, initialDelay = 5000) {
@@ -217,13 +217,13 @@
       ['Portas, janelas e retoques', 'Pintura de esquadrias e retoques finais para completar o acabamento.']
     ];
     const container = q('#painting-groups');
-    container.innerHTML = groups.map((group, index) => '<article class="painting-card" style="z-index:' + (index + 1) + '"><div class="painting-copy"><span class="electrical-count">' + String(index + 1).padStart(2, '0') + ' / 06</span><h3>' + group[0] + '</h3><p>' + group[1] + '</p><a class="btn" target="_blank" rel="noopener" href="' + whatsapp(group[0]) + '">Pedir orçamento</a></div><div class="painting-photo"><img src="assets/servicos/pintura.png" alt="' + group[0] + '" loading="lazy"></div></article>').join('');
+    container.innerHTML = groups.map((group, index) => '<article class="painting-card" style="z-index:' + (index + 1) + '"><div class="painting-copy"><span class="electrical-count">' + String(index + 1).padStart(2, '0') + ' / 06</span><h3>' + group[0] + '</h3><p>' + group[1] + '</p><a class="btn" target="_blank" rel="noopener" href="' + whatsapp(group[0]) + '">Pedir orçamento</a></div><div class="painting-photo"><img src="assets/servicos/.jpg" alt="' + group[0] + '" loading="lazy"></div></article>').join('');
   }
 
   function renderGenericCatalog() {
     const section = q('.lateral');
     const titles = catalogTitles[key] || ['Serviços principais', 'Soluções e acabamento'];
-    const image = catalogImages[key] || 'assets/servicos/hidraulica.png';
+    const image = catalogImages[key] || 'assets/servicos/.jpg';
     const names = service[2];
     const groups = titles.map((title, groupIndex) => ({
       title,
@@ -250,7 +250,7 @@
     makeCarousel(track, dots, q('#prev'), q('#next'));
   }
 
-  if (key === 'eletrica') renderStackedCatalog(stackFromGroups(electricalGroups, 'Avaliação e adequação elétrica', 'Avaliação da instalação, planejamento de melhorias e adequação dos circuitos do imóvel.', 'assets/eletrica/eletrica-infraestrutura.png'), 'SOLUÇÕES ELÉTRICAS', 'Encontre o serviço que você precisa.', 'Seis grupos de soluções elétricas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'hidraulica') renderStackedCatalog(stackFromGroups(hydraulicGroups, 'Avaliação e adequação hidráulica', 'Avaliação dos pontos de água, esgoto e das condições gerais da instalação.', 'assets/servicos/hidraulica.png'), 'SOLUÇÕES HIDRÁULICAS', 'Encontre o serviço que você precisa.', 'Seis grupos de soluções hidráulicas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'pintura') renderPaintingCatalog(); else if (catalogTitles[key]) { const names = service[2]; const stackNames = names.slice(0, 5).concat([names.slice(5).join(' e ')]); renderStackedCatalog(stackNames.map((name) => ({ title: name, description: 'Avaliamos a necessidade, explicamos a solução e executamos o serviço conforme o orçamento aprovado.', image: catalogImages[key] })), service[1], 'Encontre o serviço que você precisa.', 'Seis grupos de soluções para cuidar do seu imóvel com segurança e organização.'); } else renderStandardCarousel();
+  if (key === 'eletrica') renderStackedCatalog(stackFromGroups(electricalGroups, 'Avaliação e adequação elétrica', 'Avaliação da instalação, planejamento de melhorias e adequação dos circuitos do imóvel.', 'assets/eletrica/.jpg'), 'SOLUÇÕES ELÉTRICAS', 'Encontre o serviço que você precisa.', 'Seis grupos de soluções elétricas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'hidraulica') renderStackedCatalog(stackFromGroups(hydraulicGroups, 'Avaliação e adequação hidráulica', 'Avaliação dos pontos de água, esgoto e das condições gerais da instalação.', 'assets/servicos/.jpg'), 'SOLUÇÕES HIDRÁULICAS', 'Encontre o serviço que você precisa.', 'Seis grupos de soluções hidráulicas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'pintura') renderPaintingCatalog(); else if (catalogTitles[key]) { const names = service[2]; const stackNames = names.slice(0, 5).concat([names.slice(5).join(' e ')]); renderStackedCatalog(stackNames.map((name) => ({ title: name, description: 'Avaliamos a necessidade, explicamos a solução e executamos o serviço conforme o orçamento aprovado.', image: catalogImages[key] })), service[1], 'Encontre o serviço que você precisa.', 'Seis grupos de soluções para cuidar do seu imóvel com segurança e organização.'); } else renderStandardCarousel();
 
   q('#lead-form').addEventListener('submit', (event) => {
     event.preventDefault();
