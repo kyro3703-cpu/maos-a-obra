@@ -112,10 +112,6 @@
     'limpeza-pos-obra': 'assets/servicos/limpeza-pos-obra.png'
   };
   const pathKey = location.pathname.split('/').filter(Boolean).pop();
-  if ((pathKey === 'servico-diferenciais' || pathKey === 'servico-diferenciais.html') && !new URLSearchParams(location.search).has('tipo')) {
-    location.replace('/eletrica');
-    return;
-  }
   const key = new URLSearchParams(location.search).get('tipo') || (pathKey && sets[pathKey] ? pathKey : 'eletrica');
   const service = sets[key] || sets.eletrica;
   const whatsapp = (name) => 'https://wa.me/5522988020606?text=' + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para ' + name + '.');
