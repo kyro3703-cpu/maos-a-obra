@@ -111,7 +111,7 @@
     'jardinagem-piscina': 'assets/servicos/jardinagem-piscina.png',
     'limpeza-pos-obra': 'assets/servicos/limpeza-pos-obra.png'
   };
-  const pathKey = location.pathname.split('/').filter(Boolean).pop();
+  const pathKey = location.pathname.split('/').filter(Boolean).pop()?.replace(/\.html$/, '');
   const key = new URLSearchParams(location.search).get('tipo') || (pathKey && sets[pathKey] ? pathKey : 'eletrica');
   const service = sets[key] || sets.eletrica;
   const whatsapp = (name) => 'https://wa.me/5522988020606?text=' + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para ' + name + '.');
