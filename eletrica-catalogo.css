@@ -14,3 +14,4 @@
 .painting-service-catalog #painting-groups{margin-top:22px}@media(max-width:760px){.painting-service-catalog #painting-groups{margin-top:16px}}
 .painting-service-catalog .painting-card:last-child{transform:translateY(-44px)}@media(max-width:760px){.painting-service-catalog .painting-card:last-child{transform:translateY(-24px)}}
 .painting-service-catalog .painting-card{top:max(18px,calc(50vh - 210px))}.painting-service-catalog .painting-card:last-child{transform:none}@media(max-width:760px){.painting-service-catalog .painting-card{top:max(14px,calc(50vh - 280px))}}
+.painting-service-catalog .painting-card:last-child{transform:translateY(-44px)}@media(max-width:760px){.painting-service-catalog .painting-card:last-child{transform:translateY(-24px)}}
