@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   };
   document.querySelectorAll('[data-service]').forEach(link=>{
     const key=keys[link.dataset.service];
-    if(key) link.href=`servico-diferenciais.html?tipo=${key}`;
+    if(key) link.href=`/${key}`;
   });
   document.addEventListener('click',event=>{
     const link=event.target.closest('[data-service]');
     if(!link) return;
     const key=keys[link.dataset.service];
-    if(key){event.preventDefault();window.location.href=`servico-diferenciais.html?tipo=${key}`;}
+    if(key){event.preventDefault();window.location.href=`/${key}`;}
   },true);
 });
