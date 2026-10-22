@@ -116,6 +116,21 @@
   const service = sets[key] || sets.eletrica;
   const whatsapp = (name) => 'https://wa.me/5522988020606?text=' + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para ' + name + '.');
 
+  function renderStackedCatalog(groups, eyebrow, heading, lead) {
+    const section = q('.lateral');
+    section.classList.add('painting-service-catalog');
+    section.classList.add('stacked-service-catalog');
+    section.innerHTML = '<div class="wrap"><div class="electrical-intro"><small>' + eyebrow + '</small><h2>' + heading + '</h2><p>' + lead + '</p></div><div id="painting-groups"></div></div>';
+    const container = q('#painting-groups');
+    container.innerHTML = groups.slice(0, 6).map((group, index) => '<article class="painting-card" style="z-index:' + (index + 1) + '"><div class="painting-copy"><span class="electrical-count">' + String(index + 1).padStart(2, '0') + ' / 06</span><h3>' + group.title + '</h3><p>' + group.description + '</p><a class="btn" target="_blank" rel="noopener" href="' + whatsapp(group.title) + '">Pedir orçamento</a></div><div class="painting-photo"><img src="' + group.image + '" alt="' + group.title + '" loading="lazy"></div></article>').join('');
+  }
+
+  const stackFromGroups = (groups, extraTitle, extraDescription, extraImage) => groups.map((group) => ({
+    title: group.title,
+    description: group.items.map((item) => item[0]).join(', ') + '.',
+    image: group.image
+  })).concat([{ title: extraTitle, description: extraDescription, image: extraImage }]);
+
   q('#title').textContent = service[0];
   q('#tag').textContent = service[1];
   q('#lead').textContent = 'Atendimento profissional para cuidar do seu imóvel com segurança e organização.';
@@ -234,7 +249,7 @@
     makeCarousel(track, dots, q('#prev'), q('#next'));
   }
 
-  if (key === 'eletrica') renderElectricalCatalog(); else if (key === 'hidraulica') renderHydraulicCatalog(); else if (key === 'pintura') renderPaintingCatalog(); else if (catalogTitles[key]) renderGenericCatalog(); else renderStandardCarousel();
+  if (key === 'eletrica') renderStackedCatalog(stackFromGroups(electricalGroups, 'Avaliação e adequação elétrica', 'Avaliação da instalação, planejamento de melhorias e adequação dos circuitos do imóvel.', 'assets/eletrica/eletrica-infraestrutura.png'), 'SOLUÇÕES ELÉTRICAS', 'Encontre o serviço elétrico que você precisa.', 'Seis grupos de soluções elétricas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'hidraulica') renderStackedCatalog(stackFromGroups(hydraulicGroups, 'Avaliação e adequação hidráulica', 'Avaliação dos pontos de água, esgoto e das condições gerais da instalação.', 'assets/servicos/hidraulica.png'), 'SOLUÇÕES HIDRÁULICAS', 'Encontre o serviço hidráulico que você precisa.', 'Seis grupos de soluções hidráulicas para cuidar do seu imóvel com segurança e organização.'); else if (key === 'pintura') renderPaintingCatalog(); else if (catalogTitles[key]) { const names = service[2]; const stackNames = names.slice(0, 5).concat([names.slice(5).join(' e ')]); renderStackedCatalog(stackNames.map((name) => ({ title: name, description: 'Avaliamos a necessidade, explicamos a solução e executamos o serviço conforme o orçamento aprovado.', image: catalogImages[key] })), service[1], 'Encontre o serviço que você precisa.', 'Seis grupos de soluções para cuidar do seu imóvel com segurança e organização.'); } else renderStandardCarousel();
 
   q('#lead-form').addEventListener('submit', (event) => {
     event.preventDefault();
