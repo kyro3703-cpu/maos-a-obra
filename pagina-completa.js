@@ -113,14 +113,7 @@
   };
   const pathKey = location.pathname.split('/').filter(Boolean).pop()?.replace(/\.html$/, '');
   const queryKey = new URLSearchParams(location.search).get('tipo');
-  if (!queryKey && pathKey === 'servico-diferenciais') {
-    location.replace('/');
-    return;
-  }
   const key = queryKey && sets[queryKey] ? queryKey : (pathKey && sets[pathKey] ? pathKey : 'eletrica');
-  if (queryKey && sets[queryKey] && /servico-diferenciais(?:\.html)?$/.test(location.pathname)) {
-    history.replaceState(null, '', '/' + queryKey);
-  }
   const service = sets[key] || sets.eletrica;
   const whatsapp = (name) => 'https://wa.me/5522988020606?text=' + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para ' + name + '.');
 
