@@ -4,6 +4,7 @@ const serviceRoutes=new Set(['eletrica','hidraulica','pintura','revestimentos','
 http.createServer((req,res)=>{
   let url=decodeURIComponent(req.url.split('?')[0]);
   if(url==='/'||url==='') url='/index.html';
+  if(url==='/servico-diferenciais') url='/servico-diferenciais.html';
   if(serviceRoutes.has(url.slice(1))) url='/servico-diferenciais.html';
   const file=path.resolve(root,'.'+url);
   const relative=path.relative(root,file);
