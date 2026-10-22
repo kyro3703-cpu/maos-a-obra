@@ -17,16 +17,19 @@ echo.
 
 "%GIT_EXE%" diff --cached --quiet
 if not errorlevel 1 (
-  echo Nenhuma alteracao nova para publicar.
-  goto end
+  echo Nenhuma alteracao nova encontrada. Criando gatilho de deploy...
+  "%GIT_EXE%" commit --allow-empty -m "Forca novo deploy"
+  if errorlevel 1 goto error
+  goto push
 )
 
 echo Criando commit...
 "%GIT_EXE%" commit -m "Atualiza site"
 if errorlevel 1 goto error
 
+:push
 echo Enviando para o GitHub...
-"%GIT_EXE%" push
+"%GIT_EXE%" push origin main
 if errorlevel 1 goto error
 
 echo.
