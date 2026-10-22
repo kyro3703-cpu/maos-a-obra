@@ -188,6 +188,22 @@
     });
   }
 
+  function renderPaintingCatalog() {
+    const section = q('.lateral');
+    section.classList.add('painting-service-catalog');
+    section.innerHTML = '<div class="wrap"><div class="electrical-intro"><small>PINTURA E ACABAMENTO</small><h2>Encontre o serviço de pintura que você precisa.</h2><p>Seis etapas de pintura e acabamento para deixar cada ambiente bem preparado e cuidado.</p></div><div id="painting-groups"></div></div>';
+    const groups = [
+      ['Pintura interna', 'Preparação, proteção e pintura de paredes e ambientes internos com acabamento uniforme.'],
+      ['Pintura externa', 'Pintura de áreas externas com materiais adequados para proteger e renovar o imóvel.'],
+      ['Tetos', 'Pintura e recuperação de tetos para devolver luminosidade e acabamento ao ambiente.'],
+      ['Fachadas', 'Renovação de fachadas com preparação da superfície e aplicação cuidadosa.'],
+      ['Massa corrida e texturas', 'Correção de imperfeições, aplicação de massa corrida e criação de texturas.'],
+      ['Portas, janelas e retoques', 'Pintura de esquadrias e retoques finais para completar o acabamento.']
+    ];
+    const container = q('#painting-groups');
+    container.innerHTML = groups.map((group, index) => '<article class="painting-card" style="z-index:' + (index + 1) + '"><div class="painting-copy"><span class="electrical-count">' + String(index + 1).padStart(2, '0') + ' / 06</span><h3>' + group[0] + '</h3><p>' + group[1] + '</p><a class="btn" target="_blank" rel="noopener" href="' + whatsapp(group[0]) + '">Pedir orçamento</a></div><div class="painting-photo"><img src="assets/servicos/pintura.png" alt="' + group[0] + '" loading="lazy"></div></article>').join('');
+  }
+
   function renderGenericCatalog() {
     const section = q('.lateral');
     const titles = catalogTitles[key] || ['Serviços principais', 'Soluções e acabamento'];
@@ -218,7 +234,7 @@
     makeCarousel(track, dots, q('#prev'), q('#next'));
   }
 
-  if (key === 'eletrica') renderElectricalCatalog(); else if (key === 'hidraulica') renderHydraulicCatalog(); else if (catalogTitles[key]) renderGenericCatalog(); else renderStandardCarousel();
+  if (key === 'eletrica') renderElectricalCatalog(); else if (key === 'hidraulica') renderHydraulicCatalog(); else if (key === 'pintura') renderPaintingCatalog(); else if (catalogTitles[key]) renderGenericCatalog(); else renderStandardCarousel();
 
   q('#lead-form').addEventListener('submit', (event) => {
     event.preventDefault();
