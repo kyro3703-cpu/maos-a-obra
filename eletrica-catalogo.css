@@ -10,4 +10,6 @@
 .lateral{padding-bottom:24px}.lateral + .advantages{padding-top:52px}.lateral .electrical-group:last-child,.lateral .painting-card:last-child{margin-bottom:0}.electrical-catalog #electrical-groups{padding-bottom:6vh}@media(max-width:760px){.lateral{padding-bottom:18px}.lateral + .advantages{padding-top:38px}.electrical-catalog #electrical-groups{padding-bottom:3vh}}
 .lateral .electrical-group:last-child,.lateral .painting-card:last-child{margin-bottom:8vh}.painting-service-catalog .painting-card{top:8px}@media(max-width:760px){.lateral .electrical-group:last-child,.lateral .painting-card:last-child{margin-bottom:6vh}.painting-service-catalog .painting-card{top:8px}}
 .painting-service-catalog{padding-top:60px}@media(max-width:760px){.painting-service-catalog{padding-top:42px}}
-.painting-service-catalog + .advantages .advantages-title h2{color:#e24a4a}
+.painting-service-catalog + .advantages .advantages-title h2{color:#10233f}
+.painting-service-catalog #painting-groups{margin-top:22px}@media(max-width:760px){.painting-service-catalog #painting-groups{margin-top:16px}}
+.painting-service-catalog .painting-card:last-child{transform:translateY(-44px)}@media(max-width:760px){.painting-service-catalog .painting-card:last-child{transform:translateY(-24px)}}
